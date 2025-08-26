@@ -1,0 +1,23 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# Logs
+*.log
+
+# IDEs
+*.iml
+.idea/
+.vscode/
+.project
+.classpath
+.settings/
+bin/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
