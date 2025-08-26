@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microframeworks WEB</title>
+    <link rel="icon" type="image/jpeg" href="/Logo.jpg">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/Logo.jpg" alt="Logo" class="logo">
+        <h1>Microframeworks WEB</h1>
+        <p>Demonstrating REST services and static file serving</p>
+    </header>
+
+    <div class="container">
+        <section class="api-section">
+            <h2>Hello Service</h2>
+            <p>Test the greeting service with query parameters</p>
+            <div class="input-group">
+                <input type="text" id="nameInput" placeholder="Enter your name" value="Pedro">
+                <button onclick="testHello()">Say Hello</button>
+            </div>
+            <div id="helloResult" class="result"></div>
+        </section>
+
+        <section class="api-section">
+            <h2>Mathematical Constants</h2>
+            <p>Get the value of PI from our REST service</p>
+            <button onclick="getPi()">Get PI Value</button>
+            <div id="piResult" class="result"></div>
+        </section>
+
+        <section class="api-section">
+            <h2>Random Number Generator</h2>
+            <p>Generate random numbers using our API</p>
+            <button onclick="getRandomNumber()">Generate Random Number</button>
+            <div id="randomResult" class="result"></div>
+        </section>
+
+        <section class="api-section">
+            <h2>Calculator Service</h2>
+            <p>Perform calculations using REST API</p>
+            <div class="calc-inputs">
+                <input type="number" id="numA" placeholder="First number" value="10">
+                <select id="operation">
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="divide">Divide</option>
+                </select>
+                <input type="number" id="numB" placeholder="Second number" value="5">
+                <button onclick="calculate()">Calculate</button>
+            </div>
+            <div id="calcResult" class="result"></div>
+        </section>
+
+        <section class="api-section">
+            <h2>System Health</h2>
+            <p>Check the framework's health status</p>
+            <button onclick="checkHealth()">Check Health</button>
+            <div id="healthResult" class="result"></div>
+        </section>
+
+        <section class="info-section">
+            <h2>Framework Features</h2>
+            <ul>
+                <li><strong>Lambda-based Routes:</strong> Define REST services using lambda expressions</li>
+                <li><strong>Query Parameter Access:</strong> Easy access to URL parameters with req.getValues()</li>
+                <li><strong>Static File Serving:</strong> Configurable static file directory</li>
+                <li><strong>Response Types:</strong> Support for JSON, HTML, and plain text responses</li>
+                <li><strong>HTTP Methods:</strong> GET, POST, PUT, DELETE support</li>
+                <li><strong>Error Handling:</strong> Built-in error responses and status codes</li>
+            </ul>
+        </section>
+
+        <section class="endpoints-section">
+            <h2>Available Endpoints</h2>
+            <div class="endpoint-list">
+                <div class="endpoint">
+                    <code>GET /hello?name=Pedro</code>
+                    <span>Greeting service with query parameter</span>
+                </div>
+                <div class="endpoint">
+                    <code>GET /pi</code>
+                    <span>Returns mathematical constant PI in JSON</span>
+                </div>
+                <div class="endpoint">
+                    <code>GET /random</code>
+                    <span>Generates a random number</span>
+                </div>
+                <div class="endpoint">
+                    <code>GET /calc?a=10&b=5&op=add</code>
+                    <span>Calculator service with multiple parameters</span>
+                </div>
+                <div class="endpoint">
+                    <code>GET /health</code>
+                    <span>Health check endpoint</span>
+                </div>
+                <div class="endpoint">
+                    <code>GET /about</code>
+                    <span>Framework information page</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Microframeworks WEB by Angie Julieth Ramos Cortes</p>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>
