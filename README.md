@@ -3,6 +3,8 @@
 Un framework web ligero desarrollado en Java que permite crear aplicaciones web con servicios REST y manejo de archivos estáticos de manera sencilla y eficiente.
 
 ---
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/e116548d-21b5-4a75-ab1c-7d50a0a66e02" />
+
 
 ## Empezando
 
@@ -66,6 +68,8 @@ Para ejecutar las pruebas automatizadas del sistema:
 ```bash
 mvn test
 ```
+<img width="1526" height="442" alt="image" src="https://github.com/user-attachments/assets/bdf9544f-df0c-4749-8426-0e8625d3a73b" />
+
 
 ### Pruebas de extremo a extremo
 
@@ -135,4 +139,5 @@ Este proyecto está bajo la licencia **MIT** – consulta el archivo `LICENSE.md
 
 - Inspiración en conceptos básicos de servidores web en Java
 - Agradecimientos a la **Escuela Colombiana de Ingeniería Julio Garavito** por el contexto académico
+
 
