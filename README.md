@@ -28,7 +28,7 @@ Clona el repositorio y compílalo con Maven:
 
 ```bash
 git clone https://github.com/AngieRamosCortes/Microframeworks-WEB.git
-cd WebServer
+cd Microframeworks-WEB
 mvn clean install
 ```
 
@@ -45,7 +45,7 @@ java -jar target/WebServer-1.0.0.jar
 Abre en tu navegador:
 
 ```
-http://localhost:9090
+http://localhost:8080
 ```
 
 El servidor estará corriendo y podrá ver la interfaz de demostración del framework.
@@ -135,3 +135,4 @@ Este proyecto está bajo la licencia **MIT** – consulta el archivo `LICENSE.md
 
 - Inspiración en conceptos básicos de servidores web en Java
 - Agradecimientos a la **Escuela Colombiana de Ingeniería Julio Garavito** por el contexto académico
+
